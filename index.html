@@ -36,8 +36,8 @@
     <section id="section1">
         
         <form method="POST" action="traitement.php">
-           <i class="fas fa-map-marker-alt" ></i>
-               <input type="search" list="villes" name="ville" required/>
+           <i id="map" class="fas fa-map-marker-alt" data-fa-transform="shrink-8" ></i>
+               <input class="search" type="search" list="villes" name="ville" required/>
             <datalist id="villes">
                 <option value="Paris, France"></option>
                 <option value="Marseille, France" selected></option>
@@ -51,7 +51,7 @@
                     <option value="Londres, UK"></option>
                         <option value="Rome, Italie"></option>
             </datalist>
-            <input type="submit" value="Rechercher"/>
+            <input class="button" type="submit" value="Rechercher"/>
             
 
         </form>

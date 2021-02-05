@@ -94,10 +94,11 @@ nav ol a.inscription:hover{
     color:black;
     border-top: none;
     font-weight: 1000;
+    text-decoration: underline;
 }
 
 
-/*style filtres*/
+/*styling filters*/
 
 #filtres ol li a {
 
@@ -105,8 +106,46 @@ nav ol a.inscription:hover{
     font-size: 18px;
     
 }
-#filtres ol li a:hover{
-    background-color: #DEEBFF;
+
+
+
+/*styling searchbar and button*/
+
+.search {
+    font-family: Raleway;
+    font-weight: 1000;
+    font-size: 15px;
+    width: 195px;
+    height: 45px;
+    padding: 10px;
+    border-color: #F2F2F2;
+    border-style: solid;
+    border-width: 1px;
 }
-
-
+.button {
+    font-family: Raleway;
+    font-weight: 1000;
+    font-size: 15px;
+    color: white; 
+    background-color: #0065FC;
+    width: 110px;
+    height: 45px;
+    padding: 10px;
+    border: none;
+    border-top-right-radius: 13px;
+    border-bottom-right-radius: 13px;
+    
+}
+#map {
+    background-color: #F2F2F2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:35px;
+    height:45px;
+    border-top-left-radius: 13px;
+    border-bottom-left-radius: 13px;
+}
+form {
+    display: flex;
+}
