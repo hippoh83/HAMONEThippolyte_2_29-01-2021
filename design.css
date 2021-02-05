@@ -76,12 +76,37 @@ a {
     text-decoration: none;
     color:black;
 }
-
-a.inscription {
-    color:#0065FC;
-    font-weight: bolder;
-}
-
 .logo {
     width: 5%;
     }
+/* style navigation header principal */
+
+a.inscription {
+    color:#0065FC;
+    font-weight:bold;
+}
+nav ol a:hover{
+    color: #0065FC;
+    font-weight:500;
+    border-top: 2px solid #0065FC;
+}
+nav ol a.inscription:hover{
+    color:black;
+    border-top: none;
+    font-weight: 1000;
+}
+
+
+/*style filtres*/
+
+#filtres ol li a {
+
+    font-weight: 1000;
+    font-size: 18px;
+    
+}
+#filtres ol li a:hover{
+    background-color: #DEEBFF;
+}
+
+
