@@ -66,7 +66,7 @@ h4{
     font-weight:1000;
 }
 h3{
-    font-size:22px;
+    font-size:19px;
     font-weight:1000;
 }
 h5{
@@ -198,7 +198,7 @@ nav ol a {
 /* Mise en page Section2 barre recherche et filtres*/
 
 #section1{
-    height: 170px;
+    height: 200px;
     display:flex;
     flex-direction:column;
     justify-content: space-between;
@@ -211,36 +211,39 @@ nav ol a {
 #filtres{
     display: flex;
     justify-content: space-between;
+    width: 90%;
     
     }
-#filtres ol {
+#filtres article {
+
    
     display: flex;
-    justify-content: space-around;
     list-style-type:none;
-       
-        
-        }
-#filtres ol li{
-    margin-right:10px;
+    width: 93%;
     }
-#filtres ol li a {
-    position: relative;
-    left: -135px;
-    top:3px;
-    border: 2px solid #F2F2F2 ;
-    display:inline-block;
-    padding: 20px;
-    padding-left: 70px;
+#filtres article a{
+    margin-right: 45px;
+    border:2px solid #DCDCDC;
     border-radius: 30px;
-    border-left: -40px;
-        
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-right: 25px;
+    height:61px;
     }
-#filtres ol li a:hover{
+    
+#filtres article a span {
+    position: relative;
+    left: -10px;
+    }
+#filtres article a:hover {
     border-color: #0065FC;
     color: #0065FC;
-        
     }
+
+       
+        
+ 
     
 
 
