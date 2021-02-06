@@ -121,7 +121,7 @@ nav ol a.inscription:hover{
     font-family: Raleway;
     font-weight: 1000;
     font-size: 18px;
-    width: 210px;
+    width: 250px;
     height: 45px;
     padding: 10px;
     border-color: #F2F2F2;
@@ -209,18 +209,40 @@ nav ol a {
     justify-content: center;
 }
 #filtres{
-    width: 70%;
     display: flex;
     justify-content: space-between;
     
-
-}
+    }
 #filtres ol {
+   
     display: flex;
-}
-
-#filtres ol li {
-    margin-right: 30px;
+    justify-content: space-around;
+    list-style-type:none;
+       
+        
+        }
+#filtres ol li{
+    margin-right:10px;
+    }
+#filtres ol li a {
+    position: relative;
+    left: -135px;
+    top:3px;
+    border: 2px solid #F2F2F2 ;
+    display:inline-block;
+    padding: 20px;
+    padding-left: 70px;
+    border-radius: 30px;
+    border-left: -40px;
+        
+    }
+#filtres ol li a:hover{
+    border-color: #0065FC;
+    color: #0065FC;
+        
+    }
     
-}
+
+
+
 
