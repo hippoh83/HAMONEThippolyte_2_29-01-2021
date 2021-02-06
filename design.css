@@ -195,7 +195,7 @@ nav ol a {
     padding-top: 50px;
     }
 
-/* Mise en page Section2 barre recherche et filtres*/
+/* Mise en page Section1 barre recherche et filtres*/
 
 #section1{
     height: 200px;
@@ -211,7 +211,7 @@ nav ol a {
 #filtres{
     display: flex;
     justify-content: space-between;
-    width: 90%;
+    width: 85%;
     
     }
 #filtres article {
@@ -219,22 +219,22 @@ nav ol a {
    
     display: flex;
     list-style-type:none;
-    width: 93%;
+    width: 94%;
     }
 #filtres article a{
-    margin-right: 45px;
+    font-size: 13px;
+    margin-right: 30px;
     border:2px solid #DCDCDC;
     border-radius: 30px;
     display:flex;
-    justify-content: flex-start;
     align-items: center;
     padding-right: 25px;
-    height:61px;
+    height:90%;
     }
     
 #filtres article a span {
     position: relative;
-    left: -10px;
+    left: -11px;
     }
 #filtres article a:hover {
     border-color: #0065FC;
@@ -245,6 +245,8 @@ nav ol a {
 
 #section2{
     margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
 }
     #section2 article {
         background-color: #F2F2F2;
@@ -267,12 +269,12 @@ nav ol a {
      margin: 15px;
      display: block;
      width:250px;
-     height: 230px;
+     height: 220px;
      background-color: white;
      transition: all .4s ease-in-out;
      
  }
- .gallery:hover {
+ .gallery:hover, .gallery2:hover{
      transform:scale(1.06);
      
  }
@@ -289,7 +291,12 @@ nav ol a {
 
  #section2 h3 {
      margin-top: 15px;
+     transition: all .4s ease-in-out;
+
  }
+ #section2 h3 a:hover{
+     text-decoration:underline;
+}
 
 
 aside {
@@ -300,6 +307,7 @@ aside {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+
 }
 #asideheadline {
     display: flex;
@@ -308,6 +316,36 @@ aside {
 #asideheadline i{
     align-self: center;
 }
+.gallery2{
+    border: 5px solid white;
+     border-radius: 20px;
+     margin: 15px;
+     margin-top: 25px;
+     display: block;
+     width:90%;
+     height: 150px;
+     background-color: white;
+     transition: all .4s ease-in-out;
+     display:flex;
+}
 
+.gallery2 img{
+    width: 40%;
+    height: 100%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.gallery2 div {
+    padding:20px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+.gallery2 div p{
+    margin-top: 10px;
+}
 
+.last-child{
+    padding-top: 25px;
+}
 
