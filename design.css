@@ -167,7 +167,7 @@ body{
 
 
 #mheader {
-height: 200px;
+height: 120px;
 display: flex;
 justify-content: space-between;
 }
@@ -199,7 +199,7 @@ nav ol a {
 /* Mise en page Section1 barre recherche et filtres*/
 
 #section1{
-    height: 200px;
+    height: 250px;
     display:flex;
     flex-direction:column;
     justify-content: space-between;
@@ -216,10 +216,7 @@ nav ol a {
     
     }
 #filtres article {
-
-   
     display: flex;
-    list-style-type:none;
     width: 94%;
     }
 #filtres article a{
