@@ -463,7 +463,7 @@ aside {
     justify-content: space-between;
     height: 450px;
 }
-#deuxactivity{
+.deuxactivity{
     display:flex;
     flex-direction: column;
     justify-content:space-between;
