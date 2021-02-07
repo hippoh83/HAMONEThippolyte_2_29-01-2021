@@ -158,9 +158,10 @@ form {
 
 /* positionnement global*/
 
-#miseenpage{
+body{
     width: 95%;
     margin:auto;
+    overflow-x: hidden;
 }
 /* Mise en page Header principal*/
 
@@ -472,7 +473,9 @@ aside {
 footer {
     
     background-color: #F2F2F2;
-    margin-top: 50px;
+    margin: 50px -500%;
+    margin-bottom: 0;
+    padding: 0 500%;
    
     height: 200px;
 }
