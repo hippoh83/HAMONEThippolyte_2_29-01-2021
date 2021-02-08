@@ -88,17 +88,20 @@ a {
 /* style navigation header principal */
 nav{
     font-size: 18px;
+    margin-left:auto;
 }
 a.inscription {
+    font-size: 18px;
     color:#0065FC;
     font-weight:bold;
+    padding-top:40px;
 }
 nav a:hover{
     color: #0065FC;
     font-weight:500;
     border-top: 2px solid #0065FC;
 }
-nav a.inscription:hover{
+ a.inscription:hover{
     color:black;
     border-top: none;
     font-weight: bold;
@@ -146,6 +149,9 @@ nav a.inscription:hover{
     border-bottom-right-radius: 13px;
     
 }
+.button i{
+    display:none;
+}
 #map {
     background-color: #F2F2F2;
     display: flex;
@@ -172,11 +178,12 @@ body{
 
 
 header {
-width: 100%;
+width:98%;
 display: flex;
 flex-wrap: wrap;
 justify-content: space-between;
 }
+
 
  
 
@@ -185,12 +192,11 @@ justify-content: space-between;
 nav{
     display:flex;
     flex-wrap: nowrap;
-    width: 400px;
-    min-width: 300px;
+    width: 300px;
+    
 }
 nav a {
-    padding:30px 20px 0px 20px;
-    margin-bottom: 30px;
+    padding:40px 20px 0px 20px;
     
     }
 
@@ -522,4 +528,85 @@ footer article div {
 footer a:hover {
     font-weight:500;
     text-decoration: underline;
+}
+
+
+/*Responsive design smartphone*/
+
+@media all and (max-device-width:480px)
+{
+   body{
+       width:90%;
+   } 
+   /*responsive header*/
+   header{
+       width:100%;
+       display:grid;
+       grid-template-columns: auto auto;
+       grid-template-rows: 60px 60px;
+       margin-bottom:40px;
+
+}
+header .logo{
+    grid-column: 1/2;
+    grid-row:1/2;
+}
+header .inscription {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    justify-self: end;
+}
+header nav{
+    width:100%;
+    grid-column: 1/3;
+    grid-row: auto;
+    display:grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    align-self: center;
+
+}
+
+nav a {
+    padding:none;
+    width:100%;
+    border-bottom:2px solid lightgray;
+    display:block;
+    padding-bottom:20px;
+    padding-right:20px;
+}
+nav a:hover{
+    border-top:none;
+    border-bottom: 2px solid #0065FC;
+    font-weight: bold;
+}
+/*responsive searchbar*/
+form{
+    justify-content: center;
+}
+.search{
+    width: 200px;
+}
+.buttontext {
+    display: none;
+}
+.button i{
+    display:contents;
+}
+.button {
+    width: 25px;
+}
+#filtres article a{
+    font-size:12px;
+}
+
+
+
+
+
+
+
+
+
+
 }
