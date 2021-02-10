@@ -538,152 +538,232 @@ footer a:hover {
 
 @media all and (max-device-width:480px)
 {
-   body{
-       width:auto;
-   } 
-   /*responsive header*/
-   header{
-       display:grid;
-       grid-template-columns: auto auto;
-       grid-template-rows: 60px 60px;
-       margin-bottom:40px;
-
-}
-header .logo{
-    grid-column: 1/2;
-    grid-row:1/2;
-}
-header .inscription {
-    grid-column: 2/3;
-    grid-row: 1/2;
-    justify-self: end;
-}
-header nav{
-    width:100%;
-    grid-column: 1/3;
-    grid-row: auto;
-    display:grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto;
-    align-self: center;
-
-}
-
-nav a {
-    padding:none;
-    width:100%;
-    border-bottom:2px solid lightgray;
-    display:block;
-    padding-bottom:20px;
-    padding-right:20px;
-}
-nav a:hover{
-    border-top:none;
-    border-bottom: 2px solid #0065FC;
-    font-weight: bold;
-}
-/*responsive searchbar*/
-form{
-    justify-content: center;
-}
-.search{
-    width: 200px;
-}
-.buttontext {
-    display: none;
-}
-.button i{
-    display:contents;
-}
-.button {
-    width: 25px;
-}
-#filtres article a{
-    font-size:12px;
-}
-
-/*responsive hebergement + activités*/
-
-#section2 article {
-    width: 100%;
-    background-color: white;
-    border-radius:0;
-    padding:40px 0 30px 20px ;
-}
-.gallery {
-    
-    margin: 15px;
-    margin-left:0;
-    display: block;
-    width:92%;
-    height: 200px;
-    font-size:15px;
-    margin-top:5px;
-}
-#hébergement{
-    margin-top: 20px;
-}
-.gallery h4{
-    font-size:17px;
-}
-aside{
-    min-width:250px;
-    width:100%;
-    border-radius:0;
-    padding:40px 0 30px 10px ;
-    font-size:15px;
-
-}
-aside h4 {
-    font-size:17px;
-}
-
-#asideheadline{
-    width:89%;
-    padding-left:15px;
-}
-.gallery2{
-    width: 90%;
-    padding:none;
-    margin:none;
-    margin-top:0px;
-}
-
-
-
-
-#section3{
-    margin-top: 20px;
-    padding:0px 0 30px 10px ;
-}
-#section3 h2{
-    padding-left: 10px;
-}
-
-.big, #pomegue, #frioul, #notredame, #longchamp{
-    width: 90%;
-    height: 200px;
-    margin-top:5px;
-}
-.big img{
-    height:75%;
-}
-#longchamp img {
-    height:75%;
-}
-#activité{
-    margin-top:30px;
-}
-
-footer{
-    margin:0;
-    padding:0;
-    padding-left:15px;
-
-}
-
-
-
+    body, header, #section1, #section2, section, footer{
+        width:100%;
+    } 
+    /*responsive header*/
+    header{
+        display:grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+        margin-bottom:40px;
+ 
+ }
+ header .logo{
+     grid-column: 1/2;
+     grid-row:1/2;
+     padding-left:20px;
+ }
+ header .inscription {
+     grid-column: 2/3;
+     grid-row: 1/2;
+     justify-self: end;
+     padding-right:20px;
+ }
+ header nav{
+     width:100%;
+     grid-column: 1/3;
+     grid-row: auto;
+     margin:0;
+     padding:0;
+     margin-top:35px;
+     display: grid;
+     grid-template-columns:50% 0 50%;
+     grid-template-rows:100%;
+     
+     
+ 
+ }
+     a.griditem1{
+         grid-column: 1/2;
+         width:100%;
+         text-align: center;
+         padding-bottom:10px;
+     }
+     a.griditem2{
+         grid-column: 3/4;
+         width:100%;
+         text-align: center;
+         padding-bottom:10px;
+         
+     }
+     
+     
+         
+ 
+ nav a {
+     padding:0;
+     margin:0;
+     border-bottom: 2px solid lightgray;
+     
+ }
+ nav a:hover{
+     border-top:none;
+     border-bottom: 2px solid #0065FC;
+     font-weight: bold;
+ }
+ 
+ /*responsive searchbar et main header*/
+ #section1 h2 {
+     padding-left:20px;
+ }
+ #section1 h5{
+     
+     padding-left:15px;
+     padding-right:15px;
+ }
+ form{
+     
+     justify-content: center;
+     padding-left:20px;
+     padding-right:20px;
+ }
+ form i{
+     height:60px;
+ }
+ 
+ .search{
+     width: 60%;
+     height:50px;
+ }
+ .buttontext {
+     display: none;
+ }
+ .button i{
+     display:contents;
+ }
+ .button {
+     width: 50px;
+     height:50px;
+     border-top-left-radius: 13px;
+     border-bottom-left-radius: 13px;
+ }
+     #map{
+         height:50px;
+         width:50px;
+     }
+ #filtres{
+     width:90%;
+     padding-left:20px;
+ }
+ 
+ 
+ #filtres article a{
+     font-size:14px;
+     margin-right: 0px;
+     margin-bottom: 9px;
+     padding-right: 17px;
+     height: 51px;
+     
+     }
+     .fam{
+         margin-left:22px;
+     }
+     
+ 
+     
+     
+ #filtres article{
+     width:100%;
+     }
+     .h3filtre{
+         margin-bottom:10px;
+     }
+ 
+ 
+ 
+ 
+ /*responsive hebergement + activités*/
+ 
+ #section2 article {
+     width: 100%;
+     background-color: white;
+     border-radius:0;
+     padding:40px 0 30px 20px ;
+ }
+ .gallery {
+     
+     margin: 15px;
+     margin-left:0;
+     display: block;
+     width:92%;
+     height: 200px;
+     font-size:15px;
+     margin-top:5px;
+ }
+ #hébergement{
+     margin-top: 20px;
+ }
+ .gallery h4{
+     font-size:17px;
+ }
+ aside{
+     width:100%;
+     border-radius:0;
+     padding:0 ;
+     font-size:15px;
+     margin:0;
+     padding-bottom:35px;
+ 
+ }
+ aside h4 {
+     font-size:17px;
+ }
+ 
+ #asideheadline{
+     width:89%;
+     padding-left:20px;
+     padding-top:40px;
+     margin-bottom:30px;
+ }
+ .gallery2{
+     width: 90%;
+     padding:none;
+     margin:none;
+     margin-top:0px;
+ }
+ 
+ 
+ 
+ 
+ #section3{
+     width:100%;
+     margin-top: 20px;
+     padding:0px 0 30px 10px ;
+ }
+ #section3 h2{
+     padding-left: 10px;
+ }
+ 
+ .big, #pomegue, #frioul, #notredame, #longchamp{
+     width: 90%;
+     height: 200px;
+     margin-top:5px;
+ }
+ .big img{
+     height:75%;
+ }
+ #longchamp img {
+     height:75%;
+ }
+ #activité{
+     margin-top:30px;
+ }
+ 
+ footer{
+     width:100%;
+     margin:0;
+     padding:0;
+       
+     
+ 
+ }
+     footer article {
+         padding-left:15px;
+     }
+ 
+ 
+ 
 
 
 
