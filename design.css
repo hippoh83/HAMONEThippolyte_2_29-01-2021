@@ -316,6 +316,7 @@ nav a {
  .gallery h4, .gallery p{
      padding: 10px;
      padding-bottom: 0px;
+
  }
 
  #section2 h3 {
@@ -355,41 +356,48 @@ aside {
      border-radius: 20px;
      margin: 15px;
      margin-top: 25px;
-     display: block;
+     display: grid;
+     grid-template-columns: 42% 58%;
+     grid-template-rows: 80% 20%;
      width:400px;
      height: 150px;
      background-color: white;
      transition: all .4s ease-in-out;
-     display:flex;
 }
 
 .gallery2 img{
-    width: 42%;
+    grid-column: 1/2;
+    grid-row:1/3;
+    width: 100%;
     height: 100%;
     object-fit: cover;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
 .gallery2 div {
-    padding:20px;
-    width: 60%;
+    grid-column:2/3;
+    grid-row:1/2;
+    margin:0;
+    width:100%;
     height:100%;
-    display: flex;
-    flex-direction: column;
+    
+}
+.gallery2 h4{
+    padding-top:15px;
+    padding-left:15px;
 }
 .gallery2 div p{
-    margin-top: 10px;
+    padding-left:15px;
+    padding-top:10px;
 }
 
 .last-child{
-    position: relative;
-    top: 35px;
+grid-column: 2/3;
+grid-row:2/3;
+padding-left:15px;
+padding-top:5px;
 }
-#hoteltoutbleu img{
-    width: 52%;
-    object-fit: cover;
 
-}
 
 /*Mise en page section3 activité à marseille*/
 
@@ -397,7 +405,6 @@ aside {
     margin-top: 50px;
     width: 100%;
 }
-
 .big {
     background-color: white;
     border: none;
@@ -718,6 +725,12 @@ footer a:hover {
  .gallery h4{
      font-size:17px;
  }
+ .gallery h4, .gallery p{
+    padding: 10px;
+    padding-bottom: 0px;
+    padding-top:8px;
+    
+}
  aside{
      width:auto;
      min-width:auto;
