@@ -85,6 +85,21 @@ a {
     min-width:100px;
     margin-top:10px;
     }
+    /*styles des icônes*/  
+.fa-circle{
+    color: #DEEBFF;
+}
+
+.fa-stack-1x{
+        color:#0065FC;
+        font-size: 0.75em;
+    }
+    .fa-star{
+        color:#0065FC;
+    }
+    .fa-starg{
+        color: #F2F2F2;
+    }
 /* style navigation header principal */
 nav{
     font-size: 18px;
@@ -651,15 +666,13 @@ footer a:hover {
  
  #filtres article a{
      font-size:14px;
-     margin-right: 0px;
+     margin-right: 11px;
      margin-bottom: 9px;
      padding-right: 17px;
      height: 51px;
      
      }
-     .eco{
-         margin-right: 22px;
-     }
+    
      
  
      
