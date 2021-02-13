@@ -1,6 +1,4 @@
-/*css reset*/
-
-
+                                /*css reset*/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -21,7 +19,7 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
-/* HTML5 display-role reset for older browsers */
+                                /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
@@ -44,15 +42,11 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
-
-/*styles du site*/
-
+                                /*styles du site*/
 @font-face {
     font-family: Raleway;
     src:url(font/Raleway-VariableFont_wght.ttf);
     }
-
 html {
     font-family: Raleway;
 }
@@ -85,11 +79,10 @@ a {
     min-width:100px;
     margin-top:10px;
     }
-    /*styles des icônes*/  
+                                /*styles des icônes*/  
 .fa-circle{
     color: #DEEBFF;
 }
-
 .fa-stack-1x{
         color:#0065FC;
         font-size: 0.75em;
@@ -100,7 +93,7 @@ a {
     .fa-starg{
         color: #F2F2F2;
     }
-/* style navigation header principal */
+                                /* style navigation header principal */
 nav{
     font-size: 18px;
     margin-left:auto;
@@ -122,20 +115,14 @@ nav a:hover{
     font-weight: bold;
     text-decoration: underline;
 }
-
-
-/*styling filters*/
-
+                                /*styling filters*/
 #filtres ol li a {
 
     font-weight: bold;
     font-size: 20px;
     
 }
-
-
-
-/*styling searchbar and button*/
+                                /*styling searchbar and button*/
 
 .search {
     font-family: Raleway;
@@ -181,29 +168,20 @@ form {
     display: flex;
     margin-top: 15px;
 }
-
-/* positionnement global*/
-
+                                /* positionnement global*/
 body{
     width: 95%;
     margin:auto;
     overflow-x: hidden;
 }
-/* Mise en page Header principal*/
-
-
+                                /* Mise en page Header principal*/
 header {
 width:98%;
 display: flex;
 flex-wrap: wrap;
 justify-content: space-between;
 }
-
-
- 
-
-/* Mise en page navigation header principale*/
-
+                                /* Mise en page navigation header principale*/
 nav{
     display:flex;
     flex-wrap: nowrap;
@@ -214,9 +192,7 @@ nav a {
     padding:40px 20px 0px 20px;
     
     }
-
-/* Mise en page Section1 barre recherche et filtres*/
-
+                                /* Mise en page Section1 barre recherche et filtres*/
 #section1{
     margin-top:20px;
     display:flex;
@@ -244,7 +220,6 @@ nav a {
     margin-top: 10px;
     
     }
-
 #filtres article a{
     font-size:12px;
     margin-right: 30px;
@@ -255,8 +230,7 @@ nav a {
     align-items: center;
     padding-right: 25px;
     height: 44px;
-    }
-    
+    } 
 #filtres article a span {
     position: relative;
     left: -10px;
@@ -265,14 +239,12 @@ nav a {
     border-color: #0065FC;
     color: #0065FC;
     }
-
-/*Mise en page section 2 hebergement et activités*/
-
+                                /*Mise en page section 2 hebergement et activités*/
 #section2{
     margin-top: 25px;
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap-reverse;
+    flex-wrap: nowrap;
 }
     #section2 article {
         background-color: #F2F2F2;
@@ -280,10 +252,11 @@ nav a {
         flex-direction: column;
         justify-content: space-around;
         width:60%;
-        min-width: 300px;
+        min-width: 200px;
         padding: 30px;
         border-radius: 20px;
         padding-right: 0px;
+        margin-right:30px;
 
         }
     #hébergement{
@@ -318,7 +291,6 @@ nav a {
      padding-bottom: 0px;
 
  }
-
  #section2 h3 {
      margin-top: 15px;
      transition: all .4s ease-in-out;
@@ -327,8 +299,6 @@ nav a {
  #section2 h3 a:hover{
      text-decoration:underline;
 }
-
-
 aside {
     width: 30%;
     min-width: 420px;
@@ -364,7 +334,6 @@ aside {
      background-color: white;
      transition: all .4s ease-in-out;
 }
-
 .gallery2 img{
     grid-column: 1/2;
     grid-row:1/3;
@@ -390,17 +359,13 @@ aside {
     padding-left:15px;
     padding-top:10px;
 }
-
 .last-child{
 grid-column: 2/3;
 grid-row:2/3;
 padding-left:15px;
 padding-top:5px;
 }
-
-
-/*Mise en page section3 activité à marseille*/
-
+                                /*Mise en page section3 activité à marseille*/
 #section3{
     margin-top: 50px;
     width: 100%;
@@ -510,9 +475,7 @@ padding-top:5px;
 .deuxactivity{
     display:flex;
     flex-direction: column;
-    justify-content:space-between;
-
-    
+    justify-content:space-between;   
 }
 #section3 a{
     transition: all .4s ease-in-out;
@@ -520,9 +483,7 @@ padding-top:5px;
 #section3 a:hover {
     transform:scale(1.06);
 }
-
-/*footer*/
-
+                                /*footer*/
 footer {
     
     background-color: #F2F2F2;
@@ -556,7 +517,7 @@ footer a:hover {
 }
 
 
-/*Responsive design smartphone*/
+                                /*Responsive design smartphone*/
 
 @media screen and (max-width:560px)
 {
@@ -570,7 +531,7 @@ footer a:hover {
         width:100%;
         min-width:auto;
     } 
-    /*responsive header*/
+                                /*responsive header*/
     header{
         display:grid;
         grid-template-columns: 50% 50%;
@@ -616,10 +577,6 @@ footer a:hover {
          padding-bottom:10px;
          
      }
-     
-     
-         
- 
  nav a {
      padding:0;
      margin:0;
@@ -632,7 +589,7 @@ footer a:hover {
      font-weight: bold;
  }
  
- /*responsive searchbar et main header*/
+                                /*responsive searchbar et main header*/
  #section1 h2 {
      padding-left:20px;
  }
@@ -650,7 +607,6 @@ footer a:hover {
  form i{
      height:60px;
  }
- 
  .search{
      width: 60%;
      height:50px;
@@ -666,6 +622,8 @@ footer a:hover {
      height:50px;
      border-top-left-radius: 13px;
      border-bottom-left-radius: 13px;
+     position:relative;
+     left:-15px;
  }
      #map{
          height:50px;
@@ -675,8 +633,6 @@ footer a:hover {
      width:90%;
      padding-left:20px;
  }
- 
- 
  #filtres article a{
      font-size:14px;
      margin-right: 11px;
@@ -684,24 +640,17 @@ footer a:hover {
      padding-right: 17px;
      height: 51px;
      
-     }
-    
-     
- 
-     
-     
+     } 
  #filtres article{
      width:100%;
      }
      .h3filtre{
          margin-bottom:10px;
      }
- 
- 
- 
- 
- /*responsive hebergement + activités*/
- 
+                                /*responsive hebergement + activités*/
+ #section2{
+     flex-wrap:wrap-reverse;
+ }
  #section2 article {
      width: 100%;
      min-width:auto;
@@ -744,7 +693,6 @@ footer a:hover {
  aside h4 {
      font-size:17px;
  }
- 
  #asideheadline{
      width:89%;
      padding-left:20px;
@@ -757,10 +705,6 @@ footer a:hover {
      margin:none;
      margin-top:0px;
  }
- 
- 
- 
- 
  #section3{
      width:100%;
      min-width:auto;
@@ -773,8 +717,7 @@ footer a:hover {
  #section3 a{
      margin-left:20px;
      margin-right:0;
- }
- 
+ } 
  .big, #pomegue, #frioul, #notredame, #longchamp{
      width: 90%;
      height: 200px;
@@ -789,7 +732,7 @@ footer a:hover {
  #activité{
      margin-top:30px;
  }
- 
+                                    /*responsive footer*/
  footer{
      width:100%;
      margin:0;
@@ -801,18 +744,14 @@ footer a:hover {
      footer article {
          padding-left:15px;
      }
- 
- 
- 
-
-
-
 }
-@media screen and (min-width:560px) and (max-width:1024px)
+                                 /*responsive tablet*/
+@media screen and (min-width:560px) and (max-width:1200px)
 {
     body{
         width:100%;
     }
+                                /*responsive header et filtres*/
     div#filtres, div#filtres article{
         width:100%;
     }
@@ -824,6 +763,10 @@ footer a:hover {
     }
     form{
         justify-content: center;
+    }
+                                /*responsive hébergements et populaires*/
+    #section2{
+     flex-wrap:wrap-reverse;
     }
     aside{
         padding: 30px 0 0 25px;
@@ -864,7 +807,6 @@ footer a:hover {
         grid-row: 3/4;
         grid-column: 1/3;
     }
-
 #section2 article{
     width:100%;
     height:700px;
@@ -874,12 +816,12 @@ footer a:hover {
     padding-left:25px;
     grid-template-columns: 33% 33% 33%;
     grid-template-rows: 5% 40% 40% 5%;
+    padding-bottom:0;
 }
 article h2{
     grid-column: 1/4;
     grid-rows:1/2;
 }
-
 #hébergement{
     grid-column: 1/4;
     grid-rows: 2/4;
@@ -887,7 +829,6 @@ article h2{
     grid-template-columns: 33% 33% 33%;
     grid-template-rows: 100% 100%;
 }
-
 article h3{
     grid-column: 1/3;
     grid-row:4/5
@@ -920,16 +861,43 @@ article h3{
     grid-column:1/2;
     
 }
+                            /*responsive activité*/
+#section3{
+    margin-top:0;
+    margin-bottom:40px;
+}
+#section3 h2{
+    padding-left:25px;
+}
+#activité {
+    display: grid;
+    grid-template-columns:50% 50%;
+    grid-template-rows: 50% 50%;
+}
+.big{
+    margin-left:25px;
+    width:85%;
+}
+.big img{
+    height:88%;
+}
+.deuxactivity{
+    height:100%;
 
-
-
-
-
-
-
-
-
-    
+    display:grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+}
+#pomegue,#frioul, #notredame, #longchamp{
+    margin:0;
+    margin-top:12px;
+    width:85%;
+    height:212px;
+}
+#longchamp img{
+    height:75%;
+}
+                            /*responsive footer*/
     footer{
         width:100%;
         margin:0;
@@ -938,7 +906,7 @@ article h3{
         
     
     }
-        footer article {
+    footer article {
             padding-left:15px;
         }
 }
